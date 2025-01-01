@@ -4,4 +4,5 @@ version = "0.1.0"
 edition = "2021"
 
 [dependencies]
+cricket_scoring = { git = "https://git.davidathome.org/david/cricket_scoring", version = "0.1.0" }
 cursive = "0.21.1"

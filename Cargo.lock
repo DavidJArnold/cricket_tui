@@ -57,6 +57,14 @@ dependencies = [
 ]
 
 [[package]]
+name = "cricket_scoring"
+version = "0.1.0"
+source = "git+https://git.davidathome.org/david/cricket_scoring#511d2aa258800c596a4a954ffe56b90b5de4a874"
+dependencies = [
+ "thiserror",
+]
+
+[[package]]
 name = "crossbeam-channel"
 version = "0.5.14"
 source = "registry+https://github.com/rust-lang/crates.io-index"
@@ -577,6 +585,26 @@ dependencies = [
 ]
 
 [[package]]
+name = "thiserror"
+version = "2.0.9"
+source = "registry+https://github.com/rust-lang/crates.io-index"
+checksum = "f072643fd0190df67a8bab670c20ef5d8737177d6ac6b2e9a236cb096206b2cc"
+dependencies = [
+ "thiserror-impl",
+]
+
+[[package]]
+name = "thiserror-impl"
+version = "2.0.9"
+source = "registry+https://github.com/rust-lang/crates.io-index"
+checksum = "7b50fa271071aae2e6ee85f842e2e28ba8cd2c5fb67f11fcb1fd70b276f9e7d4"
+dependencies = [
+ "proc-macro2",
+ "quote",
+ "syn",
+]
+
+[[package]]
 name = "time"
 version = "0.3.37"
 source = "registry+https://github.com/rust-lang/crates.io-index"
@@ -613,6 +641,7 @@ dependencies = [
 name = "tui"
 version = "0.1.0"
 dependencies = [
+ "cricket_scoring",
  "cursive",
 ]
 
