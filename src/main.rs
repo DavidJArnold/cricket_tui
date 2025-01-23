@@ -7,7 +7,7 @@ use cursive::{
     theme::Theme, utils::markup::StyledString, view::Resizable, views::{Button, EditView, LinearLayout, RadioGroup, TextView}, Cursive
 };
 
-use cricket_scoring::{error::BallString, scoring::{innings::Innings, player::Player, BallEvents, BallOutcome}};
+use cricket_scoring::{error::BallString, scoring::{innings::Innings, player::Player, ball::BallEvents, ball::BallOutcome}};
 
 fn v_radio<T>(title: &str, btns: Vec<(char, T)>) -> (LinearLayout, RadioGroup<char>)
 where
